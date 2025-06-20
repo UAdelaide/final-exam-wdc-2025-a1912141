@@ -17,7 +17,7 @@ const { createApp } = Vue;
 
             var role = res.data.user.role;
             if (role === "owner") {
-              this.redirect('/owner');
+              this.redirect('/owner.html');
             } else {
               this.redirect('/walker');
             }
