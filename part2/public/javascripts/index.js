@@ -39,8 +39,7 @@ const { createApp } = Vue;
           try {
             await axios.post('/api/users/logout');
             window.location.href = '/';
-          }
-          catch (err) {
+          }catch (err) {
             console.error('Logout failed error:', err);
           }
         }
