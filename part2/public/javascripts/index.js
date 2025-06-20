@@ -17,9 +17,9 @@ const { createApp } = Vue;
 
             var role = res.data.user.role;
             if (role === "owner") {
-              this.redirect('/owner.html');
+              this.redirect('/owner-dashboard.html');
             } else {
-              this.redirect('/walker');
+              this.redirect('/walker-dashboard.html');
             }
           } catch (e) {
             console.error("Auth Failed");
