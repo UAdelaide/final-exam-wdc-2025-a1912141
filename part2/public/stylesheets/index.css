@@ -23,4 +23,5 @@ input {
 button {
     width: fit-content;
     align-self: center;
+    cursor: pointer;
 }
