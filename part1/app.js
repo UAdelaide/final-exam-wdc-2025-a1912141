@@ -20,6 +20,10 @@ const mysql = require('mysql2/promise');
       password: '',
       database: 'DogWalkService'
     });
+    } catch (err) {
+    console.error('Error setting up database: ', err);
+  }
+})();
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
