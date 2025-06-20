@@ -40,7 +40,9 @@ const { createApp } = Vue;
             await axios.post('/api/users/logout');
             window.location.href = '/';
           }
-          catch
+          catch (err) {
+            console.error('Logout failed')
+          }
         }
       }
     }).mount('#app');
