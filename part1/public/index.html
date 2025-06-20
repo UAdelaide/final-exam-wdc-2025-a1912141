@@ -60,17 +60,18 @@
                      isClicked: false
                     };
                 },
-            methods() {
-                fetchData(){
-                    axios.get('https://dog.ceo/api/breeds/image/random')
-                    .then(response => {
-                     this.dogPic = response.data.message;
-                    })
-                    .catch(error => {
-                      console.error('dog does not like you', error);
-                    });
-                }
-            }
+                methods() {
+                    fetchData(){
+                        axios.get('https://dog.ceo/api/breeds/image/random')
+                        .then(response => {
+                        this.dogPic = response.data.message;
+                        })
+                        .catch(error => {
+                        console.error('dog does not like you', error);
+                        });
+                    }
+                },
+                mounted()
 
         })
 
