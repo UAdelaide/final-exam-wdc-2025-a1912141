@@ -65,8 +65,11 @@
                     axios.da('https://dog.ceo/api/breeds/image/random')
                      .then(response => {
                       this.dogPic = response.data.message;
-                    })
-                    
+                     })
+                     .catch(error => {
+                      console.error('Failed to fetch dog image:', error);
+                     });
+
         })
                 }
         }
