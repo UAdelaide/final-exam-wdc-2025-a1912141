@@ -35,6 +35,8 @@ const { createApp } = Vue;
         redirect(path) {
           window.location.href = path;
         },
-        
+        async function logout() {
+          try 
+        }
       }
     }).mount('#app');
