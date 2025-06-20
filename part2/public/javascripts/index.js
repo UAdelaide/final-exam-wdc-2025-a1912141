@@ -34,6 +34,7 @@ const { createApp } = Vue;
         // redirect func
         redirect(path) {
           window.location.href = path;
-        }
+        },
+        
       }
     }).mount('#app');
