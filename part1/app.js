@@ -66,7 +66,7 @@ const mysql = require('mysql2/promise');
         FOREIGN KEY (walker_id) REFERENCES Users(user_id),
         CONSTRAINT unique_application UNIQUE (request_id, walker_id)
     );
-    `);
+    `)
 
     } catch (err) {
     console.error('error in setting up: ', err);
