@@ -56,7 +56,7 @@
     <p>Day of the dog</p>
     <div class="buttons">
         <button type="button">Click here</button>
-        <button type="button">Dont click here</button>
+        <button type="button" @click="alert('I said don’t click here!!')">Don't click here</button>
     </div>
     <div><img :src="dogPic" @click="isClicked = !isClicked" :class="{ clicked: isClicked }" alt="dog of the day"></div>
     <p>HAHA you can't use tab/enter</p>
