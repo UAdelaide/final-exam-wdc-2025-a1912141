@@ -10,7 +10,7 @@ const app = express();
 
 app.use(cookieParser());
 app.use(session({
-    secret: 'secretsecret',
+    secret: 'thisissecretshh',
     resave: false,
     saveUninitialized: true,
     cookie: { secure: false }
