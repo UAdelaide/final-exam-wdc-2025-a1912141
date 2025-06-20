@@ -32,6 +32,8 @@ const mysql = require('mysql2/promise');
     );
     `);
 
+    
+
     } catch (err) {
     console.error('error in setting up: ', err);
   }
