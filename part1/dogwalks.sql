@@ -70,16 +70,3 @@ VALUES
 ((SELECT user_id FROM Users WHERE username = 'alice123'), 'Cici', 'small'),
 ((SELECT user_id FROM Users WHERE username = 'bailey'), 'Ricksy', 'medium');
 
-((SELECT user_id FROM Users WHERE username = 'alice123'), 'Max', 'medium'),
-((SELECT user_id FROM Users WHERE username = 'carol123'), 'Bella', 'small'),
-((SELECT user_id FROM Users WHERE username = 'bailey'), 'Lulu', 'large'),
-((SELECT user_id FROM Users WHERE username = 'alice123'), 'Cici', 'small'),
-((SELECT user_id FROM Users WHERE username = 'bailey'), 'Ricksy', 'medium');
-
-INSERT INTO WalkRequests (dog_id, requested_time, duration_minutes, location, status)
-VALUES
-((SELECT dog_id FROM Dogs WHERE name = 'Max'), '2025-06-10 08:00:00', 30, 'Parklands', 'open'),
-((SELECT dog_id FROM Dogs WHERE name = 'Bella'), '2025-06-10 09:30:00', 45, 'Beachside Ave', 'accepted'),
-((SELECT dog_id FROM Dogs WHERE name = 'Lulu'), '2025-06-11 06:30:00', 20, 'Glenelg Beach', 'completed'),
-((SELECT dog_id FROM Dogs WHERE name = 'Cici'), '2025-06-11 17:55:00', 50, 'Semaphore Beach', 'open'),
-((SELECT dog_id FROM Dogs WHERE name = 'Ricksy'), '2025-06-12 12:40:00', 35, 'Henley Beach', 'cancelled');
