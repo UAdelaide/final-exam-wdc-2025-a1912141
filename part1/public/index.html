@@ -73,7 +73,9 @@
                 },
                 mounted( {
                     this.fetchData();
-                    window.addEventListener('keydown')
+                    window.addEventListener('keydown'), (e) => {
+                        if (e.key === 'Tab' || e.key === 'Enter')
+                    }
                 })
 
         })
