@@ -4,7 +4,22 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 const mysql = require('mysql2/promise');
 
+(async () => {
+  try {
+    const connection = await mysql.createConnection({
+      host: '127.0.0.1',
+      user: 'root',
+      password: ''
+    });
+    await connection.query('CREATE DATABASE IF NOT EXISTS DogWalkService');
+    await connection.end();
 
+    const db = await mysql.createConnection({
+      host: 'localhost',
+      user: 'root',
+      password: '',
+      database: 'DogWalkService'
+    });
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
