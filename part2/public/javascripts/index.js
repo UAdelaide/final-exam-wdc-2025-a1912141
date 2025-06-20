@@ -16,10 +16,12 @@ const { createApp } = Vue;
               password: this.password
             });
 
-            // get role 
+            // get role
             var role = res.data.user.role;
+            // if role is owner, redirect to owner dash
             if (role === "owner") {
               this.redirect('/owner-dashboard.html');
+              // otherwise redirect to owner dash
             } else {
               this.redirect('/walker-dashboard.html');
             }
