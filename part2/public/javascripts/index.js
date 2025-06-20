@@ -25,11 +25,13 @@ const { createApp } = Vue;
             } else {
               this.redirect('/walker-dashboard.html');
             }
+            // error message
           } catch (e) {
             console.error("Auth Failed");
             this.errorMessage = "Auth Failed";
           }
         },
+        // redirect func
         redirect(path) {
           window.location.href = path;
         }
