@@ -36,7 +36,11 @@ const { createApp } = Vue;
           window.location.href = path;
         },
         async function logout() {
-          try 
+          try {
+            await axios.post('/api/users/logout');
+            window.location.href = '/';
+            
+          }
         }
       }
     }).mount('#app');
