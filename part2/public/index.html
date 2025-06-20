@@ -88,10 +88,10 @@
           } catch (e) {
             console.error("Auth Failed");
             this.errorMessage = "Auth Failed";
-          },
-          redirect(path) {
+          }
+        },
+        redirect(path) {
             window.location.href = path;
-        }
         }
       }
     }).mount('#app');
