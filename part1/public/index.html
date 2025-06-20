@@ -74,11 +74,11 @@
             },
             mounted(){
                 this.fetchData();
-                window.addEventListener('keydown'), (e) => {
+                window.addEventListener('keydown', (e) => {
                     if (e.key === 'Tab' || e.key === 'Enter') {
                         e.preventDefault();
                     }
-                }
+                });
             }
         }).mount('#doggo');
     </script>
