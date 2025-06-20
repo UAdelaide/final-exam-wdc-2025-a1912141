@@ -68,6 +68,21 @@
         return {
           message: 'Welcome to the Dog Walking Service!'
         };
+      },
+      methods: {
+        async login() {
+          try {
+            const res = await axios.post('/api/users/login', {
+              username: this.username,
+              password: this.password
+            });
+
+            var role = res.data.user.role;
+          } catch (e) {
+            console.error("Auth Failed");
+            this.errorMessage = "Auth Failed";
+          }
+        },
       }
     }).mount('#app');
   </script>
