@@ -53,33 +53,33 @@
 
     <script>
         const {createApp} = Vue;
-            createApp (){
-                data() {
-                    return {
-                     dogPic: '',
-                     isClicked: false
-                    };
-                },
-                methods() {
-                    fetchData(){
-                        axios.get('https://dog.ceo/api/breeds/image/random')
-                        .then(response => {
-                        this.dogPic = response.data.message;
-                        })
-                        .catch(error => {
-                        console.error('dog does not like you', error);
-                        });
-                    }
-                },
-                mounted(){
-                    this.fetchData();
-                    window.addEventListener('keydown'), (e) => {
-                        if (e.key === 'Tab' || e.key === 'Enter') {
-                            e.preventDefault();
-                        }
+        createApp ({
+            data() {
+                return {
+                    dogPic: '',
+                    isClicked: false
+                };
+            },
+            methods() {
+                fetchData(){
+                    axios.get('https://dog.ceo/api/breeds/image/random')
+                    .then(response => {
+                    this.dogPic = response.data.message;
+                    })
+                    .catch(error => {
+                    console.error('dog does not like you', error);
+                    });
+                }
+            },
+            mounted(){
+                this.fetchData();
+                window.addEventListener('keydown'), (e) => {
+                    if (e.key === 'Tab' || e.key === 'Enter') {
+                        e.preventDefault();
                     }
                 }
             }
+        }).mount('#doggo');
     </script>
 </body>
 </html>
