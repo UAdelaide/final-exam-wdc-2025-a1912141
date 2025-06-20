@@ -21,7 +21,7 @@ const mysql = require('mysql2/promise');
       database: 'DogWalkService'
     });
     } catch (err) {
-    console.error('Error setting up database: ', err);
+    console.error('error in setting up: ', err);
   }
 })();
 
