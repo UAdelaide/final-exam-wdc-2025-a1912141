@@ -41,7 +41,7 @@ const { createApp } = Vue;
             window.location.href = '/';
           }
           catch (err) {
-            console.error('Logout failed')
+            console.error('Logout failed error:', err);
           }
         }
       }
