@@ -74,7 +74,9 @@
                 mounted( {
                     this.fetchData();
                     window.addEventListener('keydown'), (e) => {
-                        if (e.key === 'Tab' || e.key === 'Enter')
+                        if (e.key === 'Tab' || e.key === 'Enter') {
+                            e.preventDefault();
+                        }
                     }
                 })
 
