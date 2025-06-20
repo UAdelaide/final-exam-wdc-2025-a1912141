@@ -35,12 +35,12 @@ const { createApp } = Vue;
         redirect(path) {
           window.location.href = path;
         },
-        async function logout() {
+        async logout() {
           try {
             await axios.post('/api/users/logout');
             window.location.href = '/';
-            
           }
+          catch
         }
       }
     }).mount('#app');
