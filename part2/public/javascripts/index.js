@@ -8,6 +8,7 @@ const { createApp } = Vue;
         };
       },
       methods: {
+        // method to handle login
         async login() {
           try {
             const res = await axios.post('/api/users/login', {
@@ -15,6 +16,7 @@ const { createApp } = Vue;
               password: this.password
             });
 
+            // get role 
             var role = res.data.user.role;
             if (role === "owner") {
               this.redirect('/owner-dashboard.html');
