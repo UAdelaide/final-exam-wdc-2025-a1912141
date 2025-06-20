@@ -80,10 +80,18 @@
             });
 
             var role = res.data.user.role;
+            if (role === "owner") {
+              redirect('/owner');
+            } else {
+              redirect('/walker');
+            }
           } catch (e) {
             console.error("Auth Failed");
             this.errorMessage = "Auth Failed";
-          }
+          },
+          redirect(path) {
+            window.location.href = path;
+        }
         }
       }
     }).mount('#app');
