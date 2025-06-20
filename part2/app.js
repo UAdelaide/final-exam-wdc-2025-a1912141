@@ -8,6 +8,14 @@ const session = require('express-session');
 
 const app = express();
 
+app.use(cookieParser());
+app.use(session({
+    secret: 'secretsecret',
+    resave: false,
+    saveUninitialized: true,
+    cookie: { secure: false }
+}));
+
 // Middleware
 app.use(express.json());
 app.use(express.static(path.join(__dirname, '/public')));
