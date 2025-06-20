@@ -58,8 +58,4 @@ router.get('/api/walkers/summary', async function (req, res, next) {
     }
 });
 
-// router.get('/api/walkers/summary', function(req, res, next) {
-//   res.render('index', { title: 'Express' });
-// });
-
 module.exports = router;
