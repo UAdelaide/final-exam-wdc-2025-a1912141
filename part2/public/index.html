@@ -46,12 +46,12 @@
     <div class="login-form">
       <div class="input-field">
         <span>Username</span>
-        <input type="text" placeholder="Enter username..." v-model="">
+        <input type="text" placeholder="Enter username..." v-model="username">
       </div>
 
       <div class="input-field">
         <span>Password</span>
-        <input type="password" placeholder="Enter password...">
+        <input type="password" placeholder="Enter password..." v-model="password">
       </div>
 
       <button type="button" class="btn btn-primary" @click="login">Log In</button>
