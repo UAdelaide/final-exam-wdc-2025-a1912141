@@ -79,8 +79,6 @@
               password: this.password
             });
 
-            console.log(res.data.user);
-
             var role = res.data.user.role;
             if (role === "owner") {
               this.redirect('/owner');
