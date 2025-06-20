@@ -55,15 +55,15 @@
         const {createApp} = Vue;
             createApp (){
                 data() {
-            return {
-                dogPic: '',
-                isClicked: false
-            };
-        },
-        methods() {
-            fetchData(){
-                axios.da('https://dog.ceo/api/breeds/image/random')
-            }
+                    return {
+                     dogPic: '',
+                     isClicked: false
+                    };
+                },
+            methods() {
+                fetchData(){
+                    axios.da('https://dog.ceo/api/breeds/image/random')
+                }
         }
     }
     </script>
