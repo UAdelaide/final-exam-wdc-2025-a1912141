@@ -72,6 +72,9 @@ router.post('/logout', (req, res) => {
 
 // get dogs of current user
 router.get('/dogs', async (req, res) => {
+  if (!req.session.user || !req.session.user.user_id) {
+    return res.status(401).json({ error: 'Unauthorized' });
+  }
   try {
     const [rows] = await db.query(`
       SELECT dog_id, name FROM Dogs D
