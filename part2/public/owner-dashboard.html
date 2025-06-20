@@ -114,6 +114,8 @@
           }
         }
 
+        
+
         async function submitWalkRequest() {
           try {
             const res = await fetch('/api/walks', {
@@ -138,7 +140,7 @@
             error.value = err.message;
             message.value = '';
           }
-        },
+        }
 
         onMounted(() => {
           loadWalks();
