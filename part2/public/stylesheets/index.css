@@ -1,8 +1,5 @@
 #app {
     width: 40%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
 }
 
 .login-form {
