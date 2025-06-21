@@ -27,10 +27,10 @@ button {
     margin-bottom: 2.5rem;
 }
 
-.dogs-section {
+/* .dogs-section {
     display: flex;
     flex-direction: column;
-}
+} */
 
 img {
     width: auto;
