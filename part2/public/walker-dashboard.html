@@ -73,7 +73,7 @@
             error.value = err.message;
           }
         }
-
+        
         async function getCurrentUser() {
           try {
             const me = await axios.get('/api/users/me');
