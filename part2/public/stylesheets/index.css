@@ -29,6 +29,7 @@ button {
 
 .dogs-section {
     display: flex;
+    flex-direction: column;
 }
 
 img {
