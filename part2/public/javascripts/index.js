@@ -36,6 +36,42 @@ const { createApp } = Vue;
         redirect(path) {
           window.location.href = path;
         },
-        
+        async doggo_data() {
+          try {
+            const res = await axios.get('/api/walks/dogs');
+            return res.data;
+          } catch (error) {
+            console.error("doggo data not available");
+            return [];
+          }
+        },
+        async doggo_image() {
+          try {
+            const res = await axios.get("https://dog.ceo/api/breeds/image/random");
+            return res.data.message;
+          } catch (error) {
+            console.error("my doggo image ahhh");
+            return '';
+          }
+        },
+
+        async combine_dogs() {
+          try {
+            const res = await this.doggo_data();
+            this.dogs = [];
+
+            for (const dog of res) {
+
+              const p = await this.doggo_image();
+
+              this.dogs.push({
+                ...dog,
+                img: p
+              });
+            }
+          } catch (error) {
+            console.error("Can load my doggo, error);
+          }
+        }
       }
     }).mount('#app');
