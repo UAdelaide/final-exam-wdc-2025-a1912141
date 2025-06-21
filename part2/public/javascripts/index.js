@@ -5,7 +5,7 @@ const { createApp } = Vue;
           message: 'Welcome to the Dog Walking Service!',
           password: '',
           username: '',
-          
+          dogs: []
         };
       },
       methods: {
