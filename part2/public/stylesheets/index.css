@@ -23,7 +23,7 @@ input {
 
 button {
     width: fit-content;
-    align-self: center;
+    align-self: left;
     margin-bottom: 2.5rem;
 }
 
