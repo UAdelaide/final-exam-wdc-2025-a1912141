@@ -1,6 +1,5 @@
 #app {
-    max-width: 40%;
-    width: 100%;
+    width: 40%;
 }
 
 .login-form {
@@ -26,6 +25,11 @@ button {
     width: fit-content;
     align-self: left;
     margin-bottom: 2.5rem;
+}
+
+.dogs-section {
+    display: flex;
+    
 }
 
 img {
