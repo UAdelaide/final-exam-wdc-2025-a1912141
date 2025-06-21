@@ -73,5 +73,6 @@ const { createApp } = Vue;
             console.error("Can't load my doggo", error);
           }
         }
-      }
+      },
+      mountrd()
     }).mount('#app');
