@@ -36,5 +36,6 @@ const { createApp } = Vue;
         redirect(path) {
           window.location.href = path;
         },
+        
       }
     }).mount('#app');
