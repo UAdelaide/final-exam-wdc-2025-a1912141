@@ -36,6 +36,7 @@ const { createApp } = Vue;
         redirect(path) {
           window.location.href = path;
         },
+        // functions for dog table
         async doggo_data() {
           try {
             const res = await axios.get('/api/walks/dogs');
