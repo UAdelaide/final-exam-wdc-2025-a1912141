@@ -114,6 +114,7 @@
           }
         }
 
+        // function to load dogs of user
         async function loadDogs() {
           try {
             const res= await fetch('/api/users/dogs');
@@ -164,6 +165,7 @@
         };
       },
       methods: {
+      // logout function
         async logout() {
           try {
             await axios.post('/api/users/logout');
