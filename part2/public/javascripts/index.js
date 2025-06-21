@@ -74,5 +74,7 @@ const { createApp } = Vue;
           }
         }
       },
-      mountrd()
+      mounted() {
+        this.combine_dogs();
+      }
     }).mount('#app');
