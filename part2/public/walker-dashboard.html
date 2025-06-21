@@ -74,7 +74,7 @@
           }
         }
 
-        async function getUser() {
+        async function getCurrentUser() {
           try {
             const me = await axios.get('/api/users/me');
             const id = me.data.user_id;
@@ -106,7 +106,7 @@
 
         onMounted(() => {
           loadWalkRequests();
-          getUser();
+          getCurrentUser();
         });
 
         return {
