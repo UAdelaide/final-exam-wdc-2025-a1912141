@@ -53,7 +53,7 @@ const { createApp } = Vue;
             const res = await axios.get("https://dog.ceo/api/breeds/image/random");
             return res.data.message;
           } catch (error) {
-            console.error("my doggo image ahhh");
+            console.error("cant get doggo image");
             return '';
           }
         },
