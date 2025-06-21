@@ -75,7 +75,7 @@ const { createApp } = Vue;
           } catch (error) {
             console.error("Can't load my doggo", error);
           } finally {
-            this
+            this.loading = false;
           }
         }
       },
