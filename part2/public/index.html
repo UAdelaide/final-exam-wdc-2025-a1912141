@@ -41,9 +41,7 @@
 
     <div class="dogs-section">
       <h2 class="mb-4 text-secondary">All registered dogs</h2>
-      <div v-if="loading" class="text-center">
-        <p>Loading dogs...</p>
-      </div>
+      <p v-if="loading">Loading dogs...</p>
       <table v-else class="table table-striped">
         <thead>
             <tr>
