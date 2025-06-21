@@ -27,7 +27,7 @@ button {
     margin-bottom: 2.5rem;
 }
 
-.dogs-section {
+.dogs-section>table {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
