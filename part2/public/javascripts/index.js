@@ -48,6 +48,7 @@ const { createApp } = Vue;
           }
         },
         async doggo_image() {
+          this.loading = true;
           try {
             const res = await axios.get("https://dog.ceo/api/breeds/image/random");
             return res.data.message;
@@ -74,7 +75,7 @@ const { createApp } = Vue;
           } catch (error) {
             console.error("Can't load my doggo", error);
           } finally {
-
+            this
           }
         }
       },
