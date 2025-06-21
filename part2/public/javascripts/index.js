@@ -5,7 +5,8 @@ const { createApp } = Vue;
           message: 'Welcome to the Dog Walking Service!',
           password: '',
           username: '',
-          dogs: []
+          dogs: [],
+          loading: false
         };
       },
       methods: {
@@ -73,7 +74,7 @@ const { createApp } = Vue;
           } catch (error) {
             console.error("Can't load my doggo", error);
           } finally {
-            
+
           }
         }
       },
