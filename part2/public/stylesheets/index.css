@@ -27,12 +27,6 @@ button {
     margin-bottom: 2.5rem;
 }
 
-.dogs-section>table {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
 img {
     width: auto;
     height: 6rem;
