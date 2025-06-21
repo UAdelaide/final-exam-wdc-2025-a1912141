@@ -38,6 +38,7 @@ const { createApp } = Vue;
           window.location.href = path;
         },
         // functions for dog table
+        // fetch data
         async doggo_data() {
           try {
             const res = await axios.get('/api/walks/dogs');
@@ -47,6 +48,7 @@ const { createApp } = Vue;
             return [];
           }
         },
+        // get random image
         async doggo_image() {
           this.loading = true;
           try {
@@ -57,7 +59,7 @@ const { createApp } = Vue;
             return '';
           }
         },
-
+        // combine data and image
         async combine_dogs() {
           try {
             const res = await this.doggo_data();
