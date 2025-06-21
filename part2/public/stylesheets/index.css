@@ -27,8 +27,8 @@ button {
     margin-bottom: 2.5rem;
 }
 
-.{
-
+.dogs-section {
+    display: flex;
 }
 
 img {
